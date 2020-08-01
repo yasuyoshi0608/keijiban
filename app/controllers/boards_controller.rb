@@ -13,8 +13,12 @@ class BoardsController < ApplicationController
 
   def show
     @board = Board.find(params[:id])
-    binding.pry
   end
+
+  def edit
+    @board = Board.find(params[:id])
+  end
+
 
   private
 
